@@ -53,7 +53,7 @@ jobs:
               docker image prune -f
             else
               echo "❌ Health check failed!"
-              docker logs $APP_NAME:v1
+              docker logs $APP_NAME
               exit 1
             fi
 
